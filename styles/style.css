@@ -40,7 +40,7 @@ ol {
 
 .page {
   display: flex;
-  place-content: center;
+  margin: 0 auto;
   width: 1200px;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -212,6 +212,7 @@ ol {
 .content__list {
   position: relative;
   height: 298px;
+  min-width: 395px;
   overflow-y: auto;
 }
 
@@ -235,6 +236,10 @@ ol {
   text-underline-offset: 3px;
 }
 
+.content__card-link:active {
+  background-color: #545050;
+}
+
 .content__card-link:focus {
   outline: none;
 }
@@ -246,13 +251,14 @@ ol {
 .content__video-card {
   display: flex;
   align-items: start;
-  justify-content: space-between; 
+  justify-content: space-between;
   cursor: pointer;
 }
 
 .content__video-card-description-container {
-  max-width: 205px; 
+  max-width: 201px;
   height: 100%;
+  padding-right: 4px;
 }
 
 .content__video-card-title {
@@ -265,19 +271,16 @@ ol {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  max-width: 200px;
 }
 
 .content__video-card-description {
-  line-height: 16.2px; /* 90% */
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
-  max-width: 200px;
 }
 
 .content__video-card-thumbnail {
-  min-width: 194px; 
+  min-width: 194px;
   height: 103px;
   object-fit: cover;
   object-position: center;
