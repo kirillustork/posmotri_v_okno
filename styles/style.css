@@ -40,8 +40,9 @@ ol {
 
 .page {
   display: flex;
-  margin: 0 auto;
-  width: 1200px;
+  justify-content: center; 
+  align-items: center;
+  min-height: 100vh; 
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -49,7 +50,7 @@ ol {
 }
 
 .content {
-  margin: 0 auto;
+  width: 1200px;
   display: flex;
   align-items: end;
   gap: 30px;
